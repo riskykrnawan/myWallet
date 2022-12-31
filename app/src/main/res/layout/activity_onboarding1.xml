@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    tools:context=".Onboarding1Activity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/onboardingTextContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        >
+
+        <ImageView
+            android:id="@+id/image_illustration_1"
+            android:layout_width="match_parent"
+            android:layout_height="267.16dp"
+            android:src="@drawable/illustration_1" />
+
+        <TextView
+            android:id="@+id/header_title"
+            style="@style/OnboardingTextHeader"
+            android:text="Lorem ipsum"
+            />
+
+        <TextView
+            android:id="@+id/header_body"
+            style="@style/OnboardingTextBody"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+            />
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        app:layout_constraintTop_toBottomOf="@id/onboardingTextContainer"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:id="@+id/skip"
+            android:clickable="true"
+            style="@style/OnboardingTextNav.Skip"
+            app:layout_constraintRight_toLeftOf="@id/dot_1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/dot_1"
+            style="@style/Dot.Active"
+            app:layout_constraintLeft_toRightOf="@id/skip"
+            app:layout_constraintRight_toLeftOf="@id/dot_2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+        <TextView
+            android:id="@+id/dot_2"
+            style="@style/Dot.Inactive"
+            app:layout_constraintLeft_toRightOf="@id/dot_1"
+            app:layout_constraintRight_toLeftOf="@id/dot_3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+        <TextView
+            android:id="@+id/dot_3"
+            style="@style/Dot.Inactive"
+            app:layout_constraintLeft_toRightOf="@id/dot_2"
+            app:layout_constraintRight_toLeftOf="@id/next"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/next"
+            android:clickable="true"
+            style="@style/OnboardingTextNav.Next"
+            app:layout_constraintLeft_toRightOf="@id/dot_3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

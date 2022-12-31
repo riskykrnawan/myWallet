@@ -1,0 +1,76 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MyWallet" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/light_1</item>
+        <item name="colorPrimaryVariant">@color/light_1</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/black</item>
+        <item name="colorSecondaryVariant">@color/black</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/light_status_bar</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <!-- Customize your theme here. -->
+<!--        <item name="logo">@drawable/ic_logo_light</item>-->
+    </style>
+
+
+    <style name="TextBlack">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="OnboardingTextBody">
+        <item name="android:textColor">@color/grey_4</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingStart">40dp</item>
+        <item name="android:paddingEnd">40dp</item>
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="OnboardingTextHeader">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:layout_marginTop">80dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Dot">
+        <item name="android:text">\u2022</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="Dot.Active">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="Dot.Inactive">
+        <item name="android:textColor">@color/grey_3</item>
+    </style>
+
+    <style name="OnboardingTextNav">
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginStart">40dp</item>
+        <item name="android:layout_marginEnd">40dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="OnboardingTextNav.Skip">
+        <item name="android:text">Skip</item>
+        <item name="android:textColor">@color/grey_3</item>
+    </style>
+
+    <style name="OnboardingTextNav.Next">
+        <item name="android:text">Next</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+</resources>
