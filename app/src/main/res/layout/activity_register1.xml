@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/light_2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/ScrollView">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="70dp"
+        tools:context=".Register1Activity">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="57dp"
+            android:src="@drawable/logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/signinText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logo" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:text="Have an account? "
+                android:textSize="16sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:text="Sign In"
+                android:textSize="16sp"
+                android:textColor="@color/blue_1"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:layout_marginStart="27dp"
+            android:text="Join Us to Unlock\nYour Growth"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/signinText"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/facebookLogin"
+            style="@style/LoginWith.Facebook"
+            android:layout_marginTop="31dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textTitle" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/googleLogin"
+            style="@style/LoginWith.Google"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/facebookLogin" />
+
+        <TextView
+            android:id="@+id/fullnameInputLabel"
+            style="@style/CustomInputLabel"
+            android:text="Full Name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/googleLogin" />
+        <EditText
+            android:id="@+id/fullnameInputText"
+            style="@style/CustomInputText"
+            android:hint="Full Name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fullnameInputLabel" />
+
+        <TextView
+            android:id="@+id/usernameInputLabel"
+            style="@style/CustomInputLabel"
+            android:text="Username"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fullnameInputText" />
+        <EditText
+            android:id="@+id/usernameInputText"
+            style="@style/CustomInputText"
+            android:hint="Username"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/usernameInputLabel" />
+
+        <TextView
+            android:id="@+id/emailInputLabel"
+            style="@style/CustomInputLabel"
+            android:text="Email Adddress"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/usernameInputText" />
+        <EditText
+            android:id="@+id/emailInputText"
+            style="@style/CustomInputText"
+            android:hint="Email Adddress"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/emailInputLabel" />
+
+        <TextView
+            android:id="@+id/passwordInputLabel"
+            style="@style/CustomInputLabel"
+            android:text="Password"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/emailInputText" />
+        <EditText
+            android:id="@+id/passwordInputText"
+            style="@style/CustomInputText"
+            android:hint="Password"
+            android:inputType="textPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/passwordInputLabel" />
+
+        <TextView
+            android:id="@+id/confirmPasswordInputLabel"
+            style="@style/CustomInputLabel"
+            android:text="Confirm Password"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/passwordInputText" />
+        <EditText
+            android:id="@+id/confirmPasswordInputText"
+            style="@style/CustomInputText"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/confirmPasswordInputLabel" />
+
+        <CheckBox
+            android:id="@+id/checkboxTerms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginTop="22dp"
+            android:text="I would like to receive your newsletter and other promotional information."
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/confirmPasswordInputText" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/registerButton"
+            android:layout_height="60dp"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="50dp"
+            android:text="Continue"
+            android:letterSpacing="0.05"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/purple_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkboxTerms" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
