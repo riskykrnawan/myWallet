@@ -48,14 +48,14 @@ class OnboardingActivity : AppCompatActivity(), View.OnClickListener {
             if (onboardingViewPager.currentItem + 1 < onboardingAdapter.itemCount) {
                 onboardingViewPager.currentItem = onboardingViewPager.currentItem + 1
             } else {
-                val i = Intent(this@OnboardingActivity, MainActivity::class.java)
+                val i = Intent(this@OnboardingActivity, Register1Activity::class.java)
                 startActivity(i)
                 finish()
             }
         }
 
         buttonOnboardingSkip.setOnClickListener {
-            val i = Intent(this@OnboardingActivity, MainActivity::class.java)
+            val i = Intent(this@OnboardingActivity, Register1Activity::class.java)
             startActivity(i)
             finish()
         }
@@ -112,29 +112,29 @@ class OnboardingActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun setOnboardingItem() {
-        val onBoardingItems = ArrayList<OnBoardingItem>();
+        val onBoardingItems = ArrayList<OnBoardingItem>()
 
-        val item1 = OnBoardingItem();
+        val item1 = OnBoardingItem()
         item1.title = "Lorem ipsum"
         item1.description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
         item1.image = R.drawable.illustration_1
 
-        val item2 = OnBoardingItem();
+        val item2 = OnBoardingItem()
         item2.title = "Lorem ipsum dolor sit\n" +
                 "amet, consectetur"
         item2.description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
         item2.image = R.drawable.illustration_2
 
-        val item3 = OnBoardingItem();
+        val item3 = OnBoardingItem()
         item3.title = "Lorem ipsum"
         item3.description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
         item3.image = R.drawable.illustration_3
 
-        onBoardingItems.add(item1);
-        onBoardingItems.add(item2);
-        onBoardingItems.add(item3);
+        onBoardingItems.add(item1)
+        onBoardingItems.add(item2)
+        onBoardingItems.add(item3)
 
-        onboardingAdapter = OnboardingAdapter(onBoardingItems);
+        onboardingAdapter = OnboardingAdapter(onBoardingItems)
 
     }
 

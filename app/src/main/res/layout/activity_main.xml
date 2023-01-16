@@ -8,26 +8,15 @@
     tools:context=".MainActivity">
     <TextView
         android:id="@+id/diawasi_oleh"
-        android:text="@string/diawasi_oleh"
-        android:textSize="12sp"
+        android:text="Halaman Kosong"
+        android:textSize="20sp"
         android:textColor="@color/grey_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="19dp"
-        app:layout_constraintBottom_toTopOf="@id/ojk"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        />
-
-    <ImageView
-        android:id="@+id/ojk"
-        android:layout_width="78dp"
-        android:layout_height="34dp"
-        android:src="@drawable/ojk"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginBottom="57dp"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

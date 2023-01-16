@@ -5,6 +5,7 @@
 
     <color name="light_1">#F5F5F5</color>
     <color name="light_2">#F8FBFF</color>
+    <color name="light_3">#F1F1F9</color>
 
     <color name="grey_1">#696B76</color>
     <color name="grey_2">#2D2B2E</color>
@@ -12,6 +13,7 @@
     <color name="grey_4">#8D8E92</color>
 
     <color name="blue_1">#1DAEFF</color>
+    <color name="blue_2">#1877F2</color>
 
     <color name="purple_1">#14193F</color>
 
