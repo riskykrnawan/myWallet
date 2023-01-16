@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyWallet">
         <activity
-            android:name=".Onboarding1Activity"
+            android:name=".OnboardingActivity"
             android:exported="false" />
         <activity
             android:name=".SplashActivity"
